@@ -36,3 +36,7 @@
 ..\obj\rc.o: ..\FWLIB\inc\stm32f4xx_dac.h
 ..\obj\rc.o: ..\FWLIB\inc\stm32f4xx_dcmi.h
 ..\obj\rc.o: ..\FWLIB\inc\stm32f4xx_fsmc.h
+..\obj\rc.o: ..\HARDWARE\CAN.h
+..\obj\rc.o: ..\HARDWARE\PID.h
+..\obj\rc.o: ..\HARDWARE\LED.h
+..\obj\rc.o: ..\SYSTEM\delay\delay.h

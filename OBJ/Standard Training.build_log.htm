@@ -21,13 +21,26 @@ Target DLL:      CMSIS_AGDI.dll V1.32.13.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-C:\Users\Lenovo\Desktop\Standard Training\USER\Standard Training.uvprojx
-Project File Date:  09/18/2023
+C:\Users\Lenovo\Desktop\Standard Training\Standard-Training\USER\Standard Training.uvprojx
+Project File Date:  09/21/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK\ARM\ARMCC\Bin'
 Build target 'Project_RM_empty'
-"..\OBJ\Standard Training.axf" - 0 Error(s), 0 Warning(s).
+compiling chassis_tasks.c...
+chassis_tasks.c(31): warning:  #175-D: subscript out of range
+  	PID_Init(&Pid_Speed[4][2],kp_speed,ki_speed,kd_speed,16384.0f,5000.0f);
+chassis_tasks.c(36): warning:  #175-D: subscript out of range
+  	PID_Init(&Pid_Speed[4][3],kp_speed,ki_speed,kd_speed,16384.0f,5000.0f);
+chassis_tasks.c(66): warning:  #175-D: subscript out of range
+  		speed4=PID_Calc(&Pid_Speed[4][3],motor[4].speed_rpm,-set_speed3);
+chassis_tasks.c(77): warning:  #175-D: subscript out of range
+  		speed4=PID_Calc(&Pid_Speed[4][2],motor[4].speed_rpm,set_speed2);
+chassis_tasks.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=8916 RO-data=424 RW-data=72 ZI-data=2448  
+FromELF: creating hex file...
+"..\OBJ\Standard Training.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +53,7 @@ Package Vendor: Keil
   C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

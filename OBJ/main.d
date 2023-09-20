@@ -37,3 +37,11 @@
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\HARDWARE\RC.h
+..\obj\main.o: ..\HARDWARE\CAN.h
+..\obj\main.o: ..\HARDWARE\PID.h
+..\obj\main.o: ..\HARDWARE\LED.h
+..\obj\main.o: ..\SYSTEM\usart\usart.h
+..\obj\main.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: chassis_tasks.h
+..\obj\main.o: gimbal_tasks.h
+..\obj\main.o: main.h

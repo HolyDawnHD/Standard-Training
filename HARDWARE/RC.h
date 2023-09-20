@@ -46,12 +46,15 @@ typedef struct
 	 }key; 
 }RC_Ctl_t; 
 /* ----------------------- Internal Data ----------------------------------- */ 
-extern volatile unsigned char sbus_rx_buffer[25]; 
+extern volatile uint8_t sbus_rx_buffer[25]; 
 static RC_Ctl_t RC_Ctl; 
+
+extern RC_Ctl_t RC_Crl_chassis;
 
 void RC_Init(void);
 void DMA2_Stream2_IRQHandler(void);
 void RC_unable(void);
+void send_data_to_chassis(void);
 
 #endif
 

@@ -40,8 +40,14 @@
 "..\obj\stm32f4xx_wwdg.o"
 "..\obj\delay.o"
 "..\obj\sys.o"
+"..\obj\usart.o"
 "..\obj\rc.o"
---strict --scatter "..\OBJ\Standard Training.sct"
+"..\obj\pid.o"
+"..\obj\can.o"
+"..\obj\led.o"
+"..\obj\chassis_tasks.o"
+"..\obj\gimbal_tasks.o"
+--library_type=microlib --strict --scatter "..\OBJ\Standard Training.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\Standard Training.map" -o "..\OBJ\Standard Training.axf"
