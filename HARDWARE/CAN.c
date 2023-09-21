@@ -152,7 +152,7 @@ void CAN2_mode_init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp)
 		{                                    \
 			(ptr)->round--;                   \
 		}                                    \
-		(ptr)->real_motor_ecd_degree=(fp32)(ptr)->ecd/8191.0f*360.0f+360.0f*(ptr)->round;   \
+		(ptr)->real_motor_ecd_degree=(fp32)(ptr)->ecd/8191.0f+(ptr)->round;   \
 }
 
 

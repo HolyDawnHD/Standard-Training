@@ -10,7 +10,7 @@
 #include "main.h"
 
 
-u8 now_use=chassis;  //ÉÕÂ¼ÔÆÌ¨ gimbal or µ×ÅÌ´úÂë chassis
+u8 now_use=gimbal;  //ÉÕÂ¼ÔÆÌ¨ gimbal or µ×ÅÌ´úÂë chassis
 int main()
 {
 	delay_init(168);
